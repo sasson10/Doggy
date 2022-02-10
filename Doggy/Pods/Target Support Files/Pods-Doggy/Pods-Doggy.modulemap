@@ -1,0 +1,6 @@
+framework module Pods_Doggy {
+  umbrella header "Pods-Doggy-umbrella.h"
+
+  export *
+  module * { export * }
+}

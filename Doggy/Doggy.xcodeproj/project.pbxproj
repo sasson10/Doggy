@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		823AF2285BEFCB33797023FF /* Pods_Doggy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13CF6EF412E2D8035E2F0E92 /* Pods_Doggy.framework */; };
 		88AE3F8327B4BAC8009405E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE3F8227B4BAC8009405E7 /* AppDelegate.swift */; };
 		88AE3F8527B4BAC8009405E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE3F8427B4BAC8009405E7 /* SceneDelegate.swift */; };
 		88AE3F8727B4BAC8009405E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE3F8627B4BAC8009405E7 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13CF6EF412E2D8035E2F0E92 /* Pods_Doggy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Doggy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70A2E3B3C6057666711BD505 /* Pods-Doggy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggy.release.xcconfig"; path = "Target Support Files/Pods-Doggy/Pods-Doggy.release.xcconfig"; sourceTree = "<group>"; };
 		88AE3F7F27B4BAC8009405E7 /* Doggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AE3F8227B4BAC8009405E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88AE3F8427B4BAC8009405E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		88AE3F8B27B4BACD009405E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88AE3F8E27B4BACD009405E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88AE3F9027B4BACD009405E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B772321146049EEA6C87C675 /* Pods-Doggy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Doggy.debug.xcconfig"; path = "Target Support Files/Pods-Doggy/Pods-Doggy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823AF2285BEFCB33797023FF /* Pods_Doggy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B22074CFF6951266D438FC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13CF6EF412E2D8035E2F0E92 /* Pods_Doggy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		88AE3F7627B4BAC8009405E7 = {
 			isa = PBXGroup;
 			children = (
 				88AE3F8127B4BAC8009405E7 /* Doggy */,
 				88AE3F8027B4BAC8009405E7 /* Products */,
+				9ACD2A02B4D8D8B467E86E4E /* Pods */,
+				2B22074CFF6951266D438FC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = Doggy;
 			sourceTree = "<group>";
 		};
+		9ACD2A02B4D8D8B467E86E4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B772321146049EEA6C87C675 /* Pods-Doggy.debug.xcconfig */,
+				70A2E3B3C6057666711BD505 /* Pods-Doggy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88AE3F9327B4BACD009405E7 /* Build configuration list for PBXNativeTarget "Doggy" */;
 			buildPhases = (
+				E1EC42C0F78AD381405F08C5 /* [CP] Check Pods Manifest.lock */,
 				88AE3F7B27B4BAC8009405E7 /* Sources */,
 				88AE3F7C27B4BAC8009405E7 /* Frameworks */,
 				88AE3F7D27B4BAC8009405E7 /* Resources */,
+				39C1CAB29BCF5354DC999FB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39C1CAB29BCF5354DC999FB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doggy/Pods-Doggy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Doggy/Pods-Doggy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Doggy/Pods-Doggy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1EC42C0F78AD381405F08C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Doggy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88AE3F7B27B4BAC8009405E7 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		88AE3F9427B4BACD009405E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B772321146049EEA6C87C675 /* Pods-Doggy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		88AE3F9527B4BACD009405E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70A2E3B3C6057666711BD505 /* Pods-Doggy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
